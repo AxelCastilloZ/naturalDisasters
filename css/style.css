@@ -1,0 +1,52 @@
+:root {
+    --gris: #e0e0e0;
+    --amarillo: #fff9c4;
+    --blanco: #ffffff;
+    --lightBlue: #b3e5fc;
+    --negro: #000000;
+    --verde: #c5e1a5;
+    --fuentePrincipal: "Nosifer", sans-serif;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: var(--fuentePrincipal);
+    background-color: var(--verde);
+    margin: 0;
+  }
+  
+  nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around; 
+    padding: 2rem; 
+  }
+  
+  nav a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--negro);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 3rem; 
+    margin: 0 1rem; 
+    border-radius: 2rem; 
+    background-color: var(--blanco); 
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+  }
+  
+  nav a:hover {
+    transform: scale(1.1); /* Aumenta el tamaño un 10% */
+    box-shadow: 0 8px 12px var(--lightBlue); /* Sombra más intensa */
+  }
+  
+  nav a i {
+    margin-right: 1rem; /* Espaciado entre ícono y texto */
+  }
+  
