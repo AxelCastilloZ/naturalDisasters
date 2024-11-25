@@ -8,10 +8,18 @@
     --fuentePrincipal: "Nosifer", sans-serif;
 }
 
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
 body {
     font-family: var(--fuentePrincipal);
     margin: 0;
     background-color: var(--verde);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 .navbar {
@@ -19,14 +27,14 @@ body {
 }
 
 .navbar-brand {
-    font-size: 2rem;
+    font-size: 3rem;
     font-weight: bold;
     color: var(--blanco);
 }
 
 .navbar-nav .nav-link {
-    font-size: 1.5rem;
-    padding: 1rem 2rem;
+    font-size: 2.4rem;
+    padding: 1.5rem 3rem;
     color: var(--blanco);
     position: relative;
     transition: color 0.3s ease;
@@ -41,9 +49,9 @@ body {
     content: '';
     position: absolute;
     left: 0;
-    bottom: -3px;
+    bottom: -0.5rem;
     width: 0;
-    height: 2px;
+    height: 0.4rem;
     background-color: var(--lightBlue);
     transition: width 0.3s ease;
 }
@@ -54,28 +62,27 @@ body {
 
 .carousel-inner img {
     width: 100%;
-    max-height: 280px;
+    max-height: 35rem;
     object-fit: cover;
-    border: 2px solid var(--gris);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border: 0.3rem solid var(--gris);
+    box-shadow: 0rem 0.6rem 1.2rem rgba(0, 0, 0, 0.2);
 }
 
 #carouselExample {
-    max-height: 280px;
+    max-height: 42rem;
     overflow: hidden;
-    border-top: 4px solid var(--lightBlue);
-    border-bottom: 4px solid var(--amarillo);
+    border-bottom: 0.6rem solid var(--amarillo);
 }
 
 .card {
-    margin-bottom: 20px;
+    margin-bottom: 3rem;
     background-color: var(--amarillo);
-    border: 1px solid var(--gris);
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border: 0.15rem solid var(--gris);
+    box-shadow: 0rem 0.6rem 1.2rem rgba(0, 0, 0, 0.1);
 }
 
 .card-title {
-    font-size: 1.8rem;
+    font-size: 2.8rem;
     font-weight: bold;
     color: var(--negro);
 }
@@ -86,15 +93,29 @@ body {
 
 .card-img-top:hover {
     transform: scale(1.1);
-    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0rem 1.2rem 2.4rem rgba(0, 0, 0, 0.3);
+}
+
+.banner a {
+    font-size: 2rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+p {
+    font-size: 2rem;
 }
 
 footer {
     background-color: var(--negro);
     color: var(--blanco);
     text-align: center;
-    padding: 2rem;
-    font-size: 1.4rem;
+    padding: 3rem;
+    font-size: 2.2rem;
+    width: 100%;
+    margin-top: auto;
 }
 
 footer a {
